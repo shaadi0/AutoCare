@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="paymentsec.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="paymentsec.php" method="post">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title"> Service Summery</h3>
+				
+				<div class="summery">
+					<div class="image">
+						<img class="jpg" src="magcity.jpg">
+					</div>
+					<div class="text">
+						<h2 class="up2">Full Service</h2>
+					</div>
+					<div class="text2">
+						<h5 class="up">Vehicle Scanning</h5>
+					</div>
+				</div>
+				
+				<h3 class="title2"> PAYMENT</h3>
+				
+				<div class="table">
+					<table>
+						<tr>
+							<td>Full Service</td>
+							<th>30 000/=</th>
+						</tr>
+						<tr>
+							<td>Vehicle Scanning</td>
+							<th>5000/=</th>
+						</tr>
+						<tr>
+							<td>Driver Cost</td>
+							<th> 4000/=</th>
+						</tr>
+                        
+						<tr>
+							<td class="total">Total</td>
+							<th class="total">39 000/=</th>
+						</tr>
+                        
+					</table>
+				
+				
+				
+				</div>
+				
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="pngwing.com.png">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="" name="cardname" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="text" placeholder="" name="cardno" required>
+                </div>
+                
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Month :</span>
+                        <input type="number" placeholder="" min="1" max="12" name="month" required>
+                    </div>
+                    <div class="inputBox">
+                        <span> Year :</span>
+                        <input type="number" placeholder="" min="2020" max="2030" name="year" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" class="cvv" placeholder="" maxlength="3" name="cvv" required>
+                </div>
+
+            </div>
+    
+        </div>
+		</div>
+
+        <input type="submit" value="Pay Now" class="submit-btn">
+   
+	</form>
+
+  
+
+
+</div>    
+    
+</body>
+</html>

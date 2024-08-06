@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="infoform.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Booking Form</div>
+    <div class="content"> 
+      <form action="infoform.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required name="name">
+          </div>
+
+    
+          <div class="input-box">
+            <span class="details">Location</span>
+            <input type="text" placeholder="Location Link" required name="location">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required name="cno">
+          </div>
+          <div class="input-box">
+            <span class="details">Date</span>
+            <input type="date" placeholder="Today Date" required name="date">
+          </div>
+          <div class="input-box">
+            <span class="details">Time</span>
+            <input type="time" placeholder="Booking Time" required name="time">
+          </div>
+          <div class="input-box">
+            <span class="details">Service Type</span>
+            <select class="select" name="stype">
+              <option>Select here</option>
+              <option>Body wash </option>
+              <option>Normal service </option>
+              <option>Full service </option>
+          </select>
+          </div>
+           <div class="input-select">
+            <span class="details">Other Services</span>
+            <label class="checkbox" for="moreopid">
+              <input class="checkbox__input" value="Auto air condition repair" type="checkbox"  id="moreopid" name="type[]">
+              <div class="checkbox-box">
+              Auto air condition repair
+              </div>
+              <input class="checkbox__input" value="Vehicle scanning" type="checkbox" id="moreopid" name="type[]">
+              <div class="checkbox-box">
+              Vehicle scanning
+              </div>
+              <input class="checkbox__input" value="Engine tune ups" type="checkbox"  id="moreopid" name="type[]">
+              <div class="checkbox-box">
+              Engine tune ups
+              </div>
+              <input class="checkbox__input" value="Brake pad chang" type="checkbox"  id="moreopid" name="type[]">
+              <div class="checkbox-box">
+              Brake pad change
+          </div>
+          
+        </div>
+       
+          
+        <div class="button">
+          <input type="submit" value="Book Now">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+ 

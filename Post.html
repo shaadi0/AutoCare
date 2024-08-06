@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href=Post.css class="css">
+      <title>post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+</head>
+<body>
+<div class="container">
+    
+    <div class="col-1">
+        <form action="" method="post"   class="form">
+            <label form="form_input" class="form_label">
+            
+                <input type="file" id="form_input" class="form_input" name="file">
+            
+                <img src="images.png" alt="" class="form_icon">
+            
+                <span class="form_text">choose a photo</span>
+            </label>
+        </form>
+      </div> 
+   
+       
+    <div class="col-2">
+        <form action="post.php" method="post">
+         <div class="input-field">
+        <label>Service Center Name</label>
+        <input type="text" placeholder=" " required name="name">
+        </div>
+        
+        <div class="input-field">
+        <label>Description</label>
+        <input type="text" placeholder=" " required name="description"> 
+        </div>
+        <div class="input-field">
+        <label>Contact Number</label>
+        <input type="text" placeholder=" " required name="cno">
+        </div>
+        <div class="input-field">
+        <label>Location Link</label>
+        <input type="text" placeholder="Enter the location link " required name="link">
+        </div>
+        <h2>Service Catogories And Price</h2>
+        <div class="input-field">
+        <label>Body Wash</label>
+        <input type="text" placeholder="Enter the price " required name="body">
+        </div>
+        <div class="input-field">
+        <label>Normal Service</label>
+        <input type="text" placeholder="Enter the price " required name="normal">
+        </div>
+        <div class="input-field">
+        <label>Full Service</label>
+        <input type="text" placeholder="Enter the price" required name="full">
+        </div>
+        <h2>More Option And Price</h2>
+        <div class="input-field">
+        <label>Auto air condition repair</label>
+        <input type="text" placeholder="Enter the price " required name="aircondition">
+        </div>
+        <div class="input-field">
+        <label>Vehicle scanning</label>
+        <input type="text" placeholder="Enter the price " required name="scan" >
+        </div>
+        <div class="input-field">
+        <label>Engine tune ups</label>
+        <input type="text" placeholder="Enter the price" required name="tuneup">
+        </div>
+        <div class="input-field">
+        <label>Brake pad change</label>
+        <input type="text" placeholder="Enter the price " required name="brake">
+        </div>
+        <input type="submit" class="btn">
+
+      </div> 
+    
+    </form>  
+</div>    
+</body>
+</html>

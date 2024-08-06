@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(choose.jpg);
+	background-size: cover;
+	background-position: center;
+		
+}
+
+.banner .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    column-gap: 100px;
+}
+
+.content h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+
+
+.content{
+    width: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    transition: .4s;
+    background: #f2f2f2;
+
+}
+.topic{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.content img{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    
+    
+}
+
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    transform: translate(0px, -8px);
+    
+
+}
+
+ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+li{
+    padding: 5px;
+}
+
+.content ul li i{
+	line-height: 30px;
+	padding: 5px 20px;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.fa{
+    font-size: 18px;
+    transition: .4s;
+    color: red;
+    
+}
+.checked{
+    color: #2da309;
+}
+
+.fa:hover{
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.buy-1{
+    background: #219150;
+}
+
+.buy-1:hover{
+    transform: scale(1.05);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: .5s;
+    font-size: 27px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+    
+
+@media(max-width:1000px){
+    .content{
+        width: 45%;
+    }
+}
+
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}

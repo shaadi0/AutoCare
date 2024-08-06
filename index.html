@@ -1,0 +1,130 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
+	<title>Vehicle Service System</title>
+	<link rel="icon" type="image" href="titlebar.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">	
+	<script src="https://code.jquery.com/jquery-3.2.1.js" ></script>
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('black');
+			}
+			else
+			{
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<body>
+	<section class="banner" id="home">
+		<nav>
+			<div class="logo" >
+				<a href="index.html" ><img src="logo.png" ></a>
+			</div>
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#whychooseus">WHY CHOOSE US</a></li>
+				<li><a href="#about-us">ABOUT US</a></li>
+				<li><a href="#contact-us">CONTACT US</a></li> 
+				<li><a href="tracking.html">TRACKING</a></li> 
+				<li ><a href="login.html" class="active">Login</a></li>
+
+
+			</ul>
+		</nav>
+		
+	<div class="text-box">
+		<h1 class="slide-left">SERVICE YOUR VEHICLE <br> EASILY WITH US</h1>
+		<br>
+		<P class="slide-left"> People that who are
+not having a time to waste in service station can get <br>a driver 
+through our website and drivers are taking customers vehicle <br>
+to the service station and after completing the service drivers
+bring <br>customer’s vehicle to the pickup location.</P>
+		<br>
+		<a href="signup.html" class="hero-btn">Sign Up</a>
+		
+		
+	</div>
+	
+	</section>
+	
+	<!-------- Why choose us -------->
+	
+	<section class="choose" id="whychooseus">
+		<h1>Why Choose Us?</h1>
+		<div class="row">
+			<div class="choose-col">
+				<h3>SAVE YOUR TIME</h3><br>
+				<P>You can book a driver from our website and they drive your vehicle to the service and after completing the service driver bring your vehicle to the pickup location.</P>
+			</div>
+			<div class="choose-col">
+				<h3>EASY PROCESS</h3><br>
+				<P>You can do all things through our website. Like choosing a service station with your service preference and book a driver.</P>
+			</div>
+			<div class="choose-col">
+				<h3>SECURE SERVICE </h3><br>
+				<P>We registering only experienced driver to secure your vehicle and we provide all details about drivers for safety and we are highly considered about customers money transaction procedures.</P>
+			</div>
+			<div class="choose-col">
+				<h3>WATCH LIVE UPDATES </h3><br>
+				<P>You can get live updates through the website such as live location of your vehicle and service process update.</P>
+			</div>
+		</div>
+	</section>
+	<section class="about-section" id="about-us">
+		<div class="inner-container">  
+			<h1>About Us</h1>
+			<p class="text">
+				We created this concept to give customers access to a great service source with reliable service and to save your time wasting in servicing the vehicAuto Care is a website that gives access to the customer for a  reliable vehicle service.Through this process you can save time.This is the main benifit that you can gain through this website,as well as we provide a platform for service centers to publish their packages.one of the most important thing is we provide drivers,service centers,live locations and optimal payment facilities.
+			</p>
+		</div>
+	</section>
+	<section class="contact-us" id="contact-us">
+		<div class="row">
+		<div class="contact-cols">
+			<div>
+				<i class="fas fa-phone"></i>
+				<span>
+					<h5>071-1234567</h5>
+				</span>
+			</div>
+			<div>
+				<i class="fas fa-envelope"></i>
+				<span>
+					<h5>autocare@gmail.com</h5>
+				</span>
+			</div>
+
+		</div>
+		<div class="contact-col">
+			<form action="connect.php" method="post"  class="cuform" >
+				<h3>Contact Us</h3>
+				<input type="text" placeholder="Enter Your Name"  name="name" required>
+				<input type="email" placeholder="Enter Your E-mail"  name="email" required>
+				<textarea rows="8" placeholder="Type Message" name="msg" required></textarea>
+				<input type="submit" value="Submit" class="send">
+				
+			</form>
+		</div>
+
+		</div>
+	</section>
+	<section class="footer">
+		<div class="credit">Created by <span>Group 18</span> | All Right Reserved</div>
+	</section>
+
+
+	
+
+</body>
+</html>
